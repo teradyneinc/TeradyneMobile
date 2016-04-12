@@ -21,7 +21,7 @@ Private Declare Function WaitForSingleObject Lib "kernel32" (ByVal hHandle As Lo
 Private Declare Function ResetEvent Lib "kernel32" (ByVal hEvent As Long) As Long
 Public Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
 
-Private Const XMLControlDir = "C:\Users\champioc\Downloads\UniServer\UniServer\www\"
+Private Const XMLControlDir = "C:\Users\champioc\Downloads\RemoteControl\UniServer\www\"
 Private Const XMLResultDir = XMLControlDir
 Private Const XMLControlFile = "start.xml"
 Private Const XMLResultFile = "finish.xml"
