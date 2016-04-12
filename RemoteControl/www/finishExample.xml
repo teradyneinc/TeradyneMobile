@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teradyne>
+    <site>
+        <id>1</id>
+        <result>Pass</result>
+    </site>
+    <site>
+        <id>2</id>
+        <result>Fail</result>
+    </site>
+</teradyne>
