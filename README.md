@@ -1,4 +1,4 @@
-# TeradyneMobile
+# Teradyne Mobile
 Code Related to the Teradyne Mobile App
 
 For using the Remote Control feature, the following setup is required:
