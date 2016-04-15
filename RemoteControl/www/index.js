@@ -25,6 +25,7 @@ function start() {
         url: "start.php",
         type: "POST",
         async: false,
+        cache: false,
         data: '<?xml version="1.0" encoding="UTF-8"?><teradyne><command>start</command></teradyne>'
     })
 };
