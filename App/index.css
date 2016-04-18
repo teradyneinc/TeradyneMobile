@@ -1,0 +1,432 @@
+
+/*reset css start*/
+
+#costoftest html, #costoftest body, #costoftest div, #costoftest span, #costoftest applet, #costoftest object, #costoftest iframe, #costoftest h1, #costoftest h2, #costoftest h3, #costoftest h4, #costoftest h5, #costoftest h6, #costoftest p, #costoftest blockquote, #costoftest pre, #costoftest a, #costoftest abbr, #costoftest acronym, #costoftest address, #costoftest big, #costoftest cite, #costoftest code, #costoftest del, #costoftest dfn, #costoftest em, #costoftest img, #costoftest ins, #costoftest kbd, #costoftest q, #costoftest s, #costoftest samp, #costoftest small, #costoftest strike, #costoftest strong, #costoftest sub, #costoftest sup, #costoftest tt, #costoftest var, #costoftest b, #costoftest u, #costoftest i, #costoftest center, #costoftest dl, #costoftest dt, #costoftest dd, #costoftest ol, #costoftest ul, #costoftest li, #costoftest fieldset, #costoftest form, #costoftest label, #costoftest legend, #costoftest table, #costoftest caption, #costoftest tbody, #costoftest tfoot, #costoftest thead, #costoftest tr, #costoftest th, #costoftest td, #costoftest article, #costoftest aside, #costoftest canvas, #costoftest details, #costoftest embed, #costoftest figure, #costoftest figcaption, #costoftest footer, #costoftest header, #costoftest hgroup, #costoftest menu, #costoftest nav, #costoftest output, #costoftest ruby, #costoftest section, #costoftest summary, #costoftest time, #costoftest mark, #costoftest audio, #costoftest video {
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+#costoftest article, #costoftest aside, #costoftest details, #costoftest figcaption, #costoftest figure, #costoftest footer, #costoftest header, #costoftest hgroup, #costoftest menu, #costoftest nav, #costoftest section {
+
+    display: block;
+
+}
+
+#costoftest body {
+
+    line-height: 1;
+
+}
+
+#costoftest ol, #costoftest ul {
+
+    list-style: none;
+
+}
+
+#costoftest blockquote, #costoftest q {
+
+    quotes: none;
+
+}
+
+#costoftest blockquote:before, #costoftest blockquote:after, #costoftest q:before, #costoftest q:after {
+
+    content:'';
+
+    content: none;
+
+}
+
+#costoftest table {
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+}
+
+#costoftest * {
+
+    overflow: hidden !important;
+
+}
+
+/*reset css end*/
+
+/*custom style start*/
+
+#costoftest html, #costoftest body {
+
+    height:100%;
+
+}
+
+#costoftest table {
+
+    table-layout:fixed;
+
+}
+
+#costoftest td {
+
+    height: 3em;
+
+    border: 0.1em solid black;
+
+    vertical-align: middle;
+
+}
+
+#costoftest .blank-row {
+
+    height: 0.5em;
+
+    border: 0;
+
+}
+
+#costoftest td, #costoftest input, #costoftest h1 {
+
+    text-align: center !important;
+
+}
+
+#costoftest td[id$='Title'] {
+
+    text-align: left !important;
+
+}
+
+#costoftest h1, #costoftest span, #costoftest input, #costoftest td {
+
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+
+    font-style: normal;
+
+    font-variant: normal;
+
+    font-weight: bold;
+
+    color: black;
+
+    text-shadow: none !important;
+
+    vertical-align: middle !important;
+
+}
+
+#costoftest input[type=number] {
+
+    background-color: #E7EFF9 !important;
+
+    color: blue !important;
+
+}
+
+#costoftest .textInput {
+
+    background-color: #E7EFF9 !important;
+
+}
+
+#costoftest .scenarioInput {
+
+    background-color: #FFEEB9 !important;
+
+}
+
+#costoftest .output-row3 {
+
+    background-color: #DDD9C3 !important;
+
+}
+
+#costoftest .output-row2 {
+
+    background-color: #C5BE97 !important;
+
+}
+
+#costoftest .output-row1 {
+
+    background-color: #C5BE97 !important;
+
+}
+
+#costoftest .input-row3 {
+
+    background-color: #C5D9F1 !important;
+
+}
+
+#costoftest .input-row-scenario {
+
+    background-color: #FFC000 !important;
+
+}
+
+#costoftest .input-row-text {
+
+    background-color: #8DB4E3 !important;
+
+}
+
+#costoftest .blank-row {
+
+    background-color: white !important;
+
+}
+
+#costoftest input.error {
+
+    background-color: LightCoral !important;
+
+}
+
+#costoftest td.error {
+
+    background-color: LightCoral !important;
+
+}
+
+#costoftest input {
+
+    font-size: 1em;
+
+}
+
+#costoftest .output-row3 span {
+
+    font-size: 1em;
+
+}
+
+#costoftest .output-row2 span {
+
+    font-size: 1.125em;
+
+}
+
+#costoftest .output-row1 span {
+
+    font-size: 1.313em;
+
+}
+
+#costoftest .input-row3 span {
+
+    font-size: 1em;
+
+}
+
+#costoftest .input-row-scenario span {
+
+    font-size: 1em;
+
+}
+
+#costoftest .input-row-text span {
+
+    font-size: 1em;
+
+}
+
+#costoftest .blank-row span {
+
+    font-size: 0.5em;
+
+}
+
+#costoftest h1 {
+
+    font-size: 1.313em;
+
+}
+
+#costoftest #topLeftTableDiv {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+}
+
+#costoftest #topTableDiv {
+
+    position: absolute;
+
+    top: 0;
+
+}
+
+#costoftest #leftTableDiv {
+
+    position: absolute;
+
+    left: 0;
+
+}
+
+#costoftest #mainTableDiv {
+
+    position: absolute;
+
+}
+
+#costoftest #topLeftTable {
+
+    width: 10em;
+
+}
+
+#costoftest #topTable {
+
+    width: 80em;
+
+}
+
+#costoftest #leftTable {
+
+    width: 10em;
+
+}
+
+#costoftest #mainTable {
+
+    width: 80em;
+
+}
+
+#costoftest #contentDiv {
+
+    overflow: hidden !important;
+
+    width: 90em;
+
+    position: relative;
+
+}
+
+#costoftest #mainTableDiv {
+
+    overflow: scroll !important;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+#costoftest #topTableDiv {
+
+    overflow-x: scroll !important;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+#costoftest #leftTableDiv {
+
+    overflow-y: scroll !important;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+#costoftest .android > * {
+
+    -webkit-transform: translate3d(0, 0, 0) !important;
+
+}
+
+#costoftest td {
+
+    width: 10em !important;
+
+}
+
+#costoftest div.ui-input-text {
+
+    width: 9em !important;
+
+    margin-left: 0.5em !important;
+
+    margin-right: 0.5em !important;
+
+    float: right;
+
+}
+
+#costoftest div.ui-input-text.dollarLabel {
+
+    width: 8em !important;
+
+    margin-left: 0em !important;
+
+    margin-right: 0.5em !important;
+
+    float: right;
+
+}
+
+#costoftest td.dollarLabel::before {
+
+    content:"$";
+
+    vertical-align: -50%;
+
+}
+
+#costoftest div.ui-input-text.percentLabel {
+
+    width: 8em !important;
+
+    margin-left: 0.5em !important;
+
+    margin-right: 0em !important;
+
+    float: left;
+
+}
+
+#costoftest td.percentLabel::after {
+
+    content:"%";
+
+    vertical-align: -50%;
+
+}
+
+/*get rid of number spinners*/
+
+#costoftest input[type=number]::-webkit-outer-spin-button, #costoftest input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none !important;
+
+    margin: 0 !important;
+
+}
+
+#costoftest input[type=number] {
+
+    -moz-appearance:textfield !important;
+
+}
+
+.ui-title {
+    margin: 0.6em 10% 0.8em !important;
+}

@@ -1,0 +1,1134 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, target-densitydpi=medium-dpi" />
+        <title>Teradyne Mobile App</title>
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+        <script src="jquery.js"></script>
+        <script src="jquery.mobile-1.4.5.min.js"></script>
+        <script src="jquery.scrollTo.js"></script>
+        <script src="fastclick.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+
+        <div data-role="page" id="main" data-theme="b">
+            <div data-role="header">
+                <h1>Teradyne Mobile App</h1>
+            </div> 
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#teradynelinks">
+                        <img src="teradynelinks.png">
+                        <h2>Teradyne Links</h2>
+                        <p>Links to related sites.</p></a>
+                    </li>
+                    <li><a data-ajax="false" href="#costoftest">
+                        <img src="costoftest.png">
+                        <h2>Cost of Test Calculator</h2>
+                        <p>Calculate your cost of test.</p></a>
+                    </li>
+                    <li><a href="#remotecontrol">
+                        <img src="remotecontrol.png">
+                        <h2>Remote Control</h2>
+                        <p>Control a tester on your intranet.</p></a>
+                    </li>
+                </ul>
+                <a rel="external" href="https://github.com/teradyneinc/TeradyneMobile/wiki/Feedback">Provide Feedback.</a>
+            </div> 
+        </div>
+
+        <div data-role="page" id="teradynelinks" data-theme="b">
+            <div data-role="header">
+                <h1>Teradyne Links</h1>
+            </div> 
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a rel="external" href="http://www.teradyne.com">
+                        <img src="teradynelinks.png">
+                        <h2>Teradyne Homepage</h2>
+                        <p>Starting point for all things Teradyne.</p></a>
+                    </li>
+                    <li><a rel="external" href="http://www.teradyne.com/support/eknowledge">
+                        <img src="teradynelinks.png">
+                        <h2>eKnowledge</h2>
+                        <p>Get technical information and support.</p></a>
+                    </li>
+                    <li><a rel="external" href="http://www.teradyne.com/tug-conference/tug">
+                        <img src="teradynelinks.png">
+                        <h2>TUG Homepage</h2>
+                        <p>Learn about and register for TUG.</p></a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+        <div data-role="page" id="remotecontrol" data-theme="b">
+            <div data-role="header">
+                <h1>Teradyne Remote Control</h1>
+            </div> 
+            <div data-role="content">
+                <p>Enter tester ip address and hit connect:</p>
+                <table style='width:100%'><tr>
+                    <td>
+                        <input id="remoteControlInput" type='text'/>
+                    </td>
+                    <td style='font-size:80%; width:7em'>
+                        <input id="remoteControlButton" type='submit' value='Connect' />
+                    </td>
+                </tr></table>
+                <a rel="external" href="https://github.com/teradyneinc/TeradyneMobile">Setup your tester to support remote control.</a>
+            </div> 
+        </div>
+
+        <div data-role="page" id="costoftest">
+            <div data-role="header">
+                 <h1>Teradyne Cost of Test Calculator</h1>
+            </div>
+            <div data-role="content" id="contentDiv">
+                <div id="topLeftTableDiv">
+                    <table id="topLeftTable">
+                        <tbody>
+                            <tr>
+                                <td name="nameTitle" id="nameTitle" class="input-row3"><span>Scenario Name</span>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="topTableDiv">
+                    <table id="topTable">
+                        <tbody>
+                            <tr>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name1" id="name1" placeholder="Scenario 1" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name2" id="name2" placeholder="Scenario 2" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name3" id="name3" placeholder="Scenario 3" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name4" id="name4" placeholder="Scenario 4" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name5" id="name5" placeholder="Scenario 5" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name6" id="name6" placeholder="Scenario 6" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name7" id="name7" placeholder="Scenario 7" class="scenarioInput" />
+                                </td>
+                                <td class="input-row-scenario">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="name8" id="name8" placeholder="Scenario 8" class="scenarioInput" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="leftTableDiv">
+                    <table id="leftTable">
+                        <tbody>
+                            <tr>
+                                <td name="flowTitle" id="flowTitle" class="input-row3"><span>Test Flow</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="deviceTitle" id="deviceTitle" class="input-row3"><span>Device</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="testerTitle" id="testerTitle" class="input-row3"><span>Tester</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="systemCostTitle" id="systemCostTitle" class="input-row3"><span>Test System Cost ($)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="manipulatorCostTitle" id="manipulatorCostTitle" class="input-row3"><span>Manipulator Cost ($)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="handlerCostTitle" id="handlerCostTitle" class="input-row3"><span>Handler/Prober Cost ($)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="fixtureCostTitle" id="fixtureCostTitle" class="input-row3"><span>Test Fixture Cost ($)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="totalCostTitle" id="totalCostTitle" class="output-row2"><span>Total Test Cell Cost ($)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="depreciationTimeTitle" id="depreciationTimeTitle" class="input-row3"><span>Depreciation Time (years)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="yearlyCostTitle" id="yearlyCostTitle" class="output-row3"><span>Test Cell Cost per Year ($/Yr)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row"><span>&nbsp;</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="deviceVolumeTitle" id="deviceVolumeTitle" class="input-row3"><span>Device Volume (#/month)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="testTimeTitle" id="testTimeTitle" class="input-row3"><span>Device Single Site Test Time (sec)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="efficiencyTitle" id="efficiencyTitle" class="input-row3"><span>Parallel Test Efficiency (%)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="siteCountTitle" id="siteCountTitle" class="input-row3"><span>Total Sites (#)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="totalTestTimeTitle" id="totalTestTimeTitle" class="output-row3"><span>Device Total Multisite Test Time (sec)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3" name="yieldTitle" id="yieldTitle"><span>Yield (%)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="handlerTimeTitle" id="handlerTimeTitle" class="input-row3"><span>Handler/Prober Time (sec)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="effectiveTotalTestTimeTitle" id="effectiveTotalTestTimeTitle" class="output-row3"><span>Effective Total Multisite Test Time (sec)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="utilizationTitle" id="utilizationTitle" class="input-row3"><span>Test Cell Utilization (%)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="availableTimeTitle" id="availableTimeTitle" class="output-row3"><span>Total Available Time per Week (hrs/week)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="effectiveUtilizationTitle" id="effectiveUtilizationTitle" class="output-row3"><span>Effective Test Cell Utilization (%)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="devicesPerHourTitle" id="devicesPerHourTitle" class="output-row2"><span>UPH - Total Devices Per Hour (#/hr)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="goodPerHourTitle" id="goodPerHourTitle" class="output-row3"><span>UPHg - Good Devices Per Hour (#/hr)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="badPerHourTitle" id="badPerHourTitle" class="output-row3"><span>UPHb - Bad Devices Per Hour (#/hr)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row"><span>&nbsp;</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="operatingCostsTitle" id="operatingCostsTitle" class="input-row3"><span>Additional Operational Costs ($/hr)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="operatingCostPerHourTitle" id="operatingCostPerHourTitle" class="output-row3"><span>Operational Cost per Hour ($/hr)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="testCellCostPerHourTitle" id="testCellCostPerHourTitle" class="output-row3"><span>Test Cell Cost per Hour ($/hr)</span>
+                                    <img src="info.gif" style="width:1em; height:1em;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="hourlyRateTitle" id="hourlyRateTitle" class="output-row1"><span>Hourly Rate - calculated value ($/hr)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="enteredHourlyRateTitle" id="enteredHourlyRateTitle" class="input-row3"><span>Enter Hourly Rate if desired, if blank will use above calculated value ($/hr)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row"><span>&nbsp;</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="costPerGoodTitle" id="costPerGoodTitle" class="output-row1"><span>Total Cost per Good Device Tested ($/device)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="goodPerMonthTitle" id="goodPerMonthTitle" class="output-row3"><span>Good Devices Per Month (#/month)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="cellsPerMonthTitle" id="cellsPerMonthTitle" class="output-row2"><span>Test Cells Required Per Month (#/month)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="totalCapitalTitle" id="totalCapitalTitle" class="output-row2"><span>Total Capital Spend ($)</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row"><span>&nbsp;</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="overallCostTitle" id="overalCostTitle" class="output-row1"><span>Overall Cost/Good Device Tested ($/device)</span>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="mainTableDiv">
+                    <table id="mainTable">
+                        <tbody>
+                            <tr>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow1" id="flow1" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow2" id="flow2" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow3" id="flow3" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow4" id="flow4" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow5" id="flow5" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow6" id="flow6" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow7" id="flow7" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="flow8" id="flow8" value="" class="textInput" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device1" id="device1" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device2" id="device2" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device3" id="device3" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device4" id="device4" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device5" id="device5" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device6" id="device6" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device7" id="device7" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="device8" id="device8" value="" class="textInput" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester1" id="tester1" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester2" id="tester2" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester3" id="tester3" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester4" id="tester4" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester5" id="tester5" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester6" id="tester6" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester7" id="tester7" value="" class="textInput" />
+                                </td>
+                                <td class="input-row-text">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="email" name="tester8" id="tester8" value="" class="textInput" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost1" id="systemCost1" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost2" id="systemCost2" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost3" id="systemCost3" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost4" id="systemCost4" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost5" id="systemCost5" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost6" id="systemCost6" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost7" id="systemCost7" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="systemCost8" id="systemCost8" value="" min="0" step="any" class="dollar" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost1" id="manipulatorCost1" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost2" id="manipulatorCost2" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost3" id="manipulatorCost3" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost4" id="manipulatorCost4" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost5" id="manipulatorCost5" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost6" id="manipulatorCost6" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost7" id="manipulatorCost7" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="manipulatorCost8" id="manipulatorCost8" value="" min="0" step="any" class="dollar" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost1" id="handlerCost1" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost2" id="handlerCost2" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost3" id="handlerCost3" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost4" id="handlerCost4" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost5" id="handlerCost5" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost6" id="handlerCost6" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost7" id="handlerCost7" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerCost8" id="handlerCost8" value="" min="0" step="any" class="dollar" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost1" id="fixtureCost1" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost2" id="fixtureCost2" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost3" id="fixtureCost3" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost4" id="fixtureCost4" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost5" id="fixtureCost5" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost6" id="fixtureCost6" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost7" id="fixtureCost7" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="fixtureCost8" id="fixtureCost8" value="" min="0" step="any" class="dollar" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="totalCost1" id="totalCost1" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost2" id="totalCost2" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost3" id="totalCost3" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost4" id="totalCost4" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost5" id="totalCost5" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost6" id="totalCost6" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost7" id="totalCost7" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCost8" id="totalCost8" class="output-row2"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime1" id="depreciationTime1" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime2" id="depreciationTime2" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime3" id="depreciationTime3" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime4" id="depreciationTime4" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime5" id="depreciationTime5" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime6" id="depreciationTime6" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime7" id="depreciationTime7" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="depreciationTime8" id="depreciationTime8" value="" min="0" step="any" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="yearlyCost1" id="yearlyCost1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost2" id="yearlyCost2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost3" id="yearlyCost3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost4" id="yearlyCost4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost5" id="yearlyCost5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost6" id="yearlyCost6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost7" id="yearlyCost7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="yearlyCost8" id="yearlyCost8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume1" id="deviceVolume1" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume2" id="deviceVolume2" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume3" id="deviceVolume3" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume4" id="deviceVolume4" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume5" id="deviceVolume5" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume6" id="deviceVolume6" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume7" id="deviceVolume7" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="deviceVolume8" id="deviceVolume8" value="" min="0" step="any" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime1" id="testTime1" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime2" id="testTime2" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime3" id="testTime3" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime4" id="testTime4" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime5" id="testTime5" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime6" id="testTime6" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime7" id="testTime7" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="testTime8" id="testTime8" value="" min="0" step="any" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency1" id="efficiency1" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency2" id="efficiency2" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency3" id="efficiency3" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency4" id="efficiency4" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency5" id="efficiency5" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency6" id="efficiency6" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency7" id="efficiency7" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="efficiency8" id="efficiency8" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount1" id="siteCount1" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount2" id="siteCount2" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount3" id="siteCount3" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount4" id="siteCount4" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount5" id="siteCount5" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount6" id="siteCount6" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount7" id="siteCount7" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="siteCount8" id="siteCount8" value="" min="0" step="any" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="totalTestTime1" id="totalTestTime1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime2" id="totalTestTime2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime3" id="totalTestTime3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime4" id="totalTestTime4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime5" id="totalTestTime5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime6" id="totalTestTime6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime7" id="totalTestTime7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="totalTestTime8" id="totalTestTime8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield1" id="yield1" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield2" id="yield2" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield3" id="yield3" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield4" id="yield4" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield5" id="yield5" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield6" id="yield6" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield7" id="yield7" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="yield8" id="yield8" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime1" id="handlerTime1" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime2" id="handlerTime2" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime3" id="handlerTime3" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime4" id="handlerTime4" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime5" id="handlerTime5" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime6" id="handlerTime6" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime7" id="handlerTime7" value="" min="0" step="any" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="handlerTime8" id="handlerTime8" value="" min="0" step="any" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="effectiveTotalTestTime1" id="effectiveTotalTestTime1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime2" id="effectiveTotalTestTime2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime3" id="effectiveTotalTestTime3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime4" id="effectiveTotalTestTime4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime5" id="effectiveTotalTestTime5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime6" id="effectiveTotalTestTime6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime7" id="effectiveTotalTestTime7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveTotalTestTime8" id="effectiveTotalTestTime8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization1" id="utilization1" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization2" id="utilization2" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization3" id="utilization3" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization4" id="utilization4" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization5" id="utilization5" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization6" id="utilization6" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization7" id="utilization7" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="utilization8" id="utilization8" value="" min="0" max="100" step="any" class="percent" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="availableTime1" id="availableTime1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime2" id="availableTime2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime3" id="availableTime3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime4" id="availableTime4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime5" id="availableTime5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime6" id="availableTime6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime7" id="availableTime7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="availableTime8" id="availableTime8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="effectiveUtilization1" id="effectiveUtilization1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization2" id="effectiveUtilization2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization3" id="effectiveUtilization3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization4" id="effectiveUtilization4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization5" id="effectiveUtilization5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization6" id="effectiveUtilization6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization7" id="effectiveUtilization7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="effectiveUtilization8" id="effectiveUtilization8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="devicesPerHour1" id="devicesPerHour1" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour2" id="devicesPerHour2" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour3" id="devicesPerHour3" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour4" id="devicesPerHour4" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour5" id="devicesPerHour5" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour6" id="devicesPerHour6" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour7" id="devicesPerHour7" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="devicesPerHour8" id="devicesPerHour8" class="output-row2"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="goodPerHour1" id="goodPerHour1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour2" id="goodPerHour2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour3" id="goodPerHour3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour4" id="goodPerHour4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour5" id="goodPerHour5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour6" id="goodPerHour6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour7" id="goodPerHour7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerHour8" id="goodPerHour8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="badPerHour1" id="badPerHour1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour2" id="badPerHour2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour3" id="badPerHour3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour4" id="badPerHour4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour5" id="badPerHour5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour6" id="badPerHour6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour7" id="badPerHour7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="badPerHour8" id="badPerHour8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts1" id="operatingCosts1" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts2" id="operatingCosts2" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts3" id="operatingCosts3" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts4" id="operatingCosts4" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts5" id="operatingCosts5" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts6" id="operatingCosts6" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts7" id="operatingCosts7" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="operatingCosts8" id="operatingCosts8" value="" min="0" step="any" class="dollar" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="operatingCostPerHour1" id="operatingCostPerHour1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour2" id="operatingCostPerHour2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour3" id="operatingCostPerHour3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour4" id="operatingCostPerHour4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour5" id="operatingCostPerHour5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour6" id="operatingCostPerHour6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour7" id="operatingCostPerHour7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="operatingCostPerHour8" id="operatingCostPerHour8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="testCellCostPerHour1" id="testCellCostPerHour1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour2" id="testCellCostPerHour2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour3" id="testCellCostPerHour3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour4" id="testCellCostPerHour4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour5" id="testCellCostPerHour5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour6" id="testCellCostPerHour6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour7" id="testCellCostPerHour7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="testCellCostPerHour8" id="testCellCostPerHour8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="hourlyRate1" id="hourlyRate1" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate2" id="hourlyRate2" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate3" id="hourlyRate3" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate4" id="hourlyRate4" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate5" id="hourlyRate5" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate6" id="hourlyRate6" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate7" id="hourlyRate7" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="hourlyRate8" id="hourlyRate8" class="output-row1"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate1" id="enteredHourlyRate1" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate2" id="enteredHourlyRate2" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate3" id="enteredHourlyRate3" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate4" id="enteredHourlyRate4" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate5" id="enteredHourlyRate5" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate6" id="enteredHourlyRate6" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate7" id="enteredHourlyRate7" value="" min="0" step="any" class="dollar" />
+                                </td>
+                                <td class="input-row3">
+                                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="number" name="enteredHourlyRate8" id="enteredHourlyRate8" value="" min="0" step="any" class="dollar" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td name="costPerGood1" id="costPerGood1" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood2" id="costPerGood2" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood3" id="costPerGood3" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood4" id="costPerGood4" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood5" id="costPerGood5" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood6" id="costPerGood6" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood7" id="costPerGood7" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="costPerGood8" id="costPerGood8" class="output-row1"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="goodPerMonth1" id="goodPerMonth1" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth2" id="goodPerMonth2" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth3" id="goodPerMonth3" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth4" id="goodPerMonth4" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth5" id="goodPerMonth5" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth6" id="goodPerMonth6" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth7" id="goodPerMonth7" class="output-row3"><span>-</span>
+                                </td>
+                                <td name="goodPerMonth8" id="goodPerMonth8" class="output-row3"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="cellsPerMonth1" id="cellsPerMonth1" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth2" id="cellsPerMonth2" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth3" id="cellsPerMonth3" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth4" id="cellsPerMonth4" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth5" id="cellsPerMonth5" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth6" id="cellsPerMonth6" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth7" id="cellsPerMonth7" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="cellsPerMonth8" id="cellsPerMonth8" class="output-row2"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td name="totalCaptial1" id="totalCapital1" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial2" id="totalCapital2" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial3" id="totalCapital3" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial4" id="totalCapital4" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial5" id="totalCapital5" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial6" id="totalCapital6" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial7" id="totalCapital7" class="output-row2"><span>-</span>
+                                </td>
+                                <td name="totalCaptial8" id="totalCapital8" class="output-row2"><span>-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                                <td class="blank-row">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td name="overallCost1" id="overallCost1" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost2" id="overallCost2" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost3" id="overallCost3" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost4" id="overallCost4" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost5" id="overallCost5" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost6" id="overallCost6" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost7" id="overallCost7" class="output-row1"><span>-</span>
+                                </td>
+                                <td name="overallCost8" id="overallCost8" class="output-row1"><span>-</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+
+</html>
