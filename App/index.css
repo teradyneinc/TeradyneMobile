@@ -1,4 +1,3 @@
-
 /*reset css start*/
 
 #costoftest html, #costoftest body, #costoftest div, #costoftest span, #costoftest applet, #costoftest object, #costoftest iframe, #costoftest h1, #costoftest h2, #costoftest h3, #costoftest h4, #costoftest h5, #costoftest h6, #costoftest p, #costoftest blockquote, #costoftest pre, #costoftest a, #costoftest abbr, #costoftest acronym, #costoftest address, #costoftest big, #costoftest cite, #costoftest code, #costoftest del, #costoftest dfn, #costoftest em, #costoftest img, #costoftest ins, #costoftest kbd, #costoftest q, #costoftest s, #costoftest samp, #costoftest small, #costoftest strike, #costoftest strong, #costoftest sub, #costoftest sup, #costoftest tt, #costoftest var, #costoftest b, #costoftest u, #costoftest i, #costoftest center, #costoftest dl, #costoftest dt, #costoftest dd, #costoftest ol, #costoftest ul, #costoftest li, #costoftest fieldset, #costoftest form, #costoftest label, #costoftest legend, #costoftest table, #costoftest caption, #costoftest tbody, #costoftest tfoot, #costoftest thead, #costoftest tr, #costoftest th, #costoftest td, #costoftest article, #costoftest aside, #costoftest canvas, #costoftest details, #costoftest embed, #costoftest figure, #costoftest figcaption, #costoftest footer, #costoftest header, #costoftest hgroup, #costoftest menu, #costoftest nav, #costoftest output, #costoftest ruby, #costoftest section, #costoftest summary, #costoftest time, #costoftest mark, #costoftest audio, #costoftest video {
@@ -347,12 +346,6 @@
 
 }
 
-#costoftest .android > * {
-
-    -webkit-transform: translate3d(0, 0, 0) !important;
-
-}
-
 #costoftest td {
 
     width: 10em !important;
@@ -427,6 +420,21 @@
 
 }
 
-.ui-title {
-    margin: 0.6em 10% 0.8em !important;
+.wrapable, .ui-header, .ui-title {
+    overflow: visible !important; 
+    white-space: normal !important; 
+}
+
+.scrollable {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ios * {
+    -webkit-transform: translate3d(0, 0, 0);
 }

@@ -1,4 +1,5 @@
 var timeoutReference = null; //this keeps track of whether we have a setTimout that has not yet expired for recalculating formulas
+var timeout2Reference = null; //this keeps track of whether we have a setTimout that has not yet expired for recalculating formulas
 var lastElement = null; //the last element what was updated
 var lastScenario = 1; //the scenarios that the last element belongs to
 var numScenarios = 8; //the number of scenarios 
@@ -562,13 +563,13 @@ $(function () {
         costOfTestEn = 0;
     });
     $('#costoftest').on('pageshow', function(){
+        var thePlatform = device.platform.toLowerCase();
+        if (thePlatform.indexOf("iphone") > -1 ||
+            thePlatform.indexOf("ipad") > -1) {
+            thePlatform = "ios";
+        }
+        $('#contentDiv').addClass(thePlatform);
         costOfTestEn = 1;
-	//not sure if this is needed at all
-	//var thePlatform = device.platform.toLowerCase();
-	//if ((thePlatform.indexOf("iphone") > -1) || (thePlatform.indexOf("ipad") > -1)) {
-            //thePlatform = "ios";
-	//}
-	//document.body.className = thePlatform;
         for (scenario = 1; scenario <= numScenarios; scenario++) {
             restoreScenario(scenario);
             updateScenario(scenario);
@@ -577,7 +578,8 @@ $(function () {
     });
     $('#remotecontrol').on('pageshow', function(){
         costOfTestEn = 0;
-        $('#remoteControlInput').focus();
+	$('#remoteControlInput').focus();
+        cordova.plugins.Keyboard.show();
     });
 });
 
@@ -615,6 +617,7 @@ var app = {
         }
     },
     keyboardHideHandler: function (e) {
+        StatusBar.hide();
         if (costOfTestEn == 1) {
             matchRows(0);
         }
@@ -774,5 +777,5 @@ $(function () {
 });
 
 $("#remoteControlButton").click(function (e) {
-    window.location = 'http://' + $('#remoteControlInput').val();
+    cordova.InAppBrowser.open('http://' + $('#remoteControlInput').val(), '_blank', 'location=yes');
 });

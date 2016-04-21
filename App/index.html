@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, target-densitydpi=medium-dpi" />
-        <title>Teradyne Mobile App</title>
+        <title>Teradyne Mobile</title>
         <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
         <script src="jquery.js"></script>
         <script src="jquery.mobile-1.4.5.min.js"></script>
@@ -14,60 +14,62 @@
     
     <body>
 
-        <div data-role="page" id="main" data-theme="b">
+        <div data-role="page" id="main" data-theme="b" class="scrollable">
             <div data-role="header">
-                <h1>Teradyne Mobile App</h1>
+                <h1 class="wrapable">Teradyne Mobile</h1>
             </div> 
             <div data-role="content">
-                <ul data-role="listview" data-inset="true">
+                <ul data-role="listview" data-inset="true"">
                     <li><a href="#teradynelinks">
                         <img src="teradynelinks.png">
-                        <h2>Teradyne Links</h2>
-                        <p>Links to related sites.</p></a>
+                        <h2 class="wrapable">Teradyne Links</h2>
+                        <p class="wrapable">Links to related sites.</p></a>
                     </li>
                     <li><a data-ajax="false" href="#costoftest">
                         <img src="costoftest.png">
-                        <h2>Cost of Test Calculator</h2>
-                        <p>Calculate your cost of test.</p></a>
+                        <h2 class="wrapable">Cost of Test Calculator</h2>
+                        <p class="wrapable">Calculate cost of test.</p></a>
                     </li>
                     <li><a href="#remotecontrol">
                         <img src="remotecontrol.png">
-                        <h2>Remote Control</h2>
-                        <p>Control a tester on your intranet.</p></a>
+                        <h2 class="wrapable">Remote Control</h2>
+                        <p class="wrapable">Control a tester.</p></a>
                     </li>
                 </ul>
-                <a rel="external" href="https://github.com/teradyneinc/TeradyneMobile/wiki/Feedback">Provide Feedback.</a>
+                <a href="#" onclick="cordova.InAppBrowser.open('https://github.com/teradyneinc/TeradyneMobile/wiki/Feedback', '_blank', 'location=yes')">Provide Feedback.</a>
             </div> 
         </div>
 
-        <div data-role="page" id="teradynelinks" data-theme="b">
+        <div data-role="page" id="teradynelinks" data-theme="b" class="scrollable">
             <div data-role="header">
-                <h1>Teradyne Links</h1>
+                <a data-icon="arrow-l" data-rel="back">Back</a>
+                <h1 class="wrapable">Teradyne Links</h1>
             </div> 
             <div data-role="content">
                 <ul data-role="listview" data-inset="true">
-                    <li><a rel="external" href="http://www.teradyne.com">
+                    <li><a href="#" onclick="cordova.InAppBrowser.open('http://www.teradyne.com', '_blank', 'location=yes')">
                         <img src="teradynelinks.png">
-                        <h2>Teradyne Homepage</h2>
-                        <p>Starting point for all things Teradyne.</p></a>
+                        <h2 class="wrapable">Teradyne Homepage</h2>
+                        <p class="wrapable">Starting point for all things Teradyne.</p></a>
                     </li>
-                    <li><a rel="external" href="http://www.teradyne.com/support/eknowledge">
+                    <li><a href="#" onclick="cordova.InAppBrowser.open('http://www.teradyne.com/support/eknowledge', '_blank', 'location=yes')">
                         <img src="teradynelinks.png">
-                        <h2>eKnowledge</h2>
-                        <p>Get technical information and support.</p></a>
+                        <h2 class="wrapable">eKnowledge</h2>
+                        <p class="wrapable">Get technical information and support.</p></a>
                     </li>
-                    <li><a rel="external" href="http://www.teradyne.com/tug-conference/tug">
+                    <li><a href="#" onclick="cordova.InAppBrowser.open('http://www.teradyne.com/tug-conference/tug', '_blank', 'location=yes')">
                         <img src="teradynelinks.png">
-                        <h2>TUG Homepage</h2>
-                        <p>Learn about and register for TUG.</p></a>
+                        <h2 class="wrapable">TUG Homepage</h2>
+                        <p class="wrapable">Learn about and register for TUG.</p></a>
                     </li>
                 </ul>
             </div> 
         </div>
 
-        <div data-role="page" id="remotecontrol" data-theme="b">
+        <div data-role="page" id="remotecontrol" data-theme="b" class="scrollable">
             <div data-role="header">
-                <h1>Teradyne Remote Control</h1>
+                <a data-icon="arrow-l" data-rel="back">Back</a>
+                <h1 class="wrapable">Remote Control</h1>
             </div> 
             <div data-role="content">
                 <p>Enter tester ip address and hit connect:</p>
@@ -79,13 +81,14 @@
                         <input id="remoteControlButton" type='submit' value='Connect' />
                     </td>
                 </tr></table>
-                <a rel="external" href="https://github.com/teradyneinc/TeradyneMobile">Setup your tester to support remote control.</a>
+                <a href="#" onclick="cordova.InAppBrowser.open('https://github.com/teradyneinc/TeradyneMobile', '_blank', 'location=yes')">Setup your tester to support remote control.</a>
             </div> 
         </div>
 
         <div data-role="page" id="costoftest">
-            <div data-role="header">
-                 <h1>Teradyne Cost of Test Calculator</h1>
+            <div id="headerDiv" data-role="header">
+                <a href="#main" id="backButton" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-rel="back">Back</a>
+                <h1>COT Calculator</h1>
             </div>
             <div data-role="content" id="contentDiv">
                 <div id="topLeftTableDiv">
