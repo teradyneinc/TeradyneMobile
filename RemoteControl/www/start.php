@@ -1,3 +1,6 @@
+<!--Copyright Teradyne Inc. 2016-->
+<!--Author: Corbin Champion-->
+
 <?php
     unlink("finish.xml");
     file_put_contents("start.xml.tmp", file_get_contents("php://input"));
