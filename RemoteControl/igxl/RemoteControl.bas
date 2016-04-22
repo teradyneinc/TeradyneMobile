@@ -1,3 +1,6 @@
+'Copyright Teradyne Inc. 2016
+'Author: Corbin Champion
+
 Attribute VB_Name = "RemoteControl"
 Option Explicit
 
