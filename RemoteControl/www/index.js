@@ -1,3 +1,6 @@
+//Copyright Teradyne Inc. 2016
+//Author: Corbin Champion
+
 function poll() {
     $.ajax({
         url: "finish.xml",
