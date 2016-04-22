@@ -1,3 +1,6 @@
+//Copyright Teradyne Inc. 2016
+//Author: Corbin Champion
+
 var timeoutReference = null; //this keeps track of whether we have a setTimout that has not yet expired for recalculating formulas
 var timeout2Reference = null; //this keeps track of whether we have a setTimout that has not yet expired for recalculating formulas
 var lastElement = null; //the last element what was updated
